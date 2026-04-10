@@ -2,23 +2,25 @@ import express from "express";
 
 const app = express();
 
-app.get("/", (req, res) => {
+const users = [];
+
+app.get("/user", (req, res) => {
   res.send("Hello From The Server!");
 });
 
-app.put("/clothes", (req, res) => {
+app.put("/user", (req, res) => {
   res.send("ye lo bhai clothes");
 });
 
-app.post("/shoes", (req, res) => {
-  res.send("ye lo bhai shoes");
+app.post("/user", (req, res) => {
+  res.send("ye lo bhai hogaye ap register");
 });
 
-app.patch("/watch", (req, res) => {
+app.patch("/user", (req, res) => {
   res.send("ye lo bhai watch");
 });
 
-app.delete("/mobile", (req, res) => {
+app.delete("/user", (req, res) => {
   res.send("ye lo bhai mobile");
 });
 
